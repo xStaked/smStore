@@ -10,47 +10,21 @@ const people = [
   },
   {
     id: 2,
-    name: "Asus",
-    avatar: "https://cdn.worldvectorlogo.com/logos/asus-logo.svg",
-  },
-  {
-    id: 3,
-    name: "Google",
-    avatar: "https://cdn.worldvectorlogo.com/logos/google-2015.svg",
-  },
-  {
-    id: 4,
     name: "Huawei",
     avatar: "https://cdn.worldvectorlogo.com/logos/huawei.svg",
   },
   {
-    id: 5,
-    name: "Lg",
-    avatar: "https://cdn.worldvectorlogo.com/logos/lg.svg",
-  },
-  {
-    id: 6,
+    id: 3,
     name: "Motorola",
     avatar: "https://cdn.worldvectorlogo.com/logos/motorola-new-logo.svg",
   },
   {
-    id: 7,
-    name: "One Plus",
-    avatar: "https://cdn.worldvectorlogo.com/logos/oneplus-2.svg",
-  },
-  {
-    id: 8,
+    id: 4,
     name: "Samsung",
     avatar: "https://cdn.worldvectorlogo.com/logos/samsung.svg",
   },
   {
-    id: 9,
-    name: "Sony",
-    avatar: 
-    'https://cdn.worldvectorlogo.com/logos/sony-logo.svg',
-  },
-  {
-    id: 10,
+    id: 5,
     name: "Xiaomi",
     avatar:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/1024px-Xiaomi_logo_%282021-%29.svg.png",
