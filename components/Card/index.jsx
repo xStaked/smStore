@@ -1,39 +1,55 @@
 import React from "react";
+import Image from "next/image";
 
-function Card(dispositivo) {
+function Card({
+  imageURL,
+  name,
+  pulgadas,
+  procesador,
+  almacenamiento,
+  camara,
+  os,
+  peso,
+  resolucion,
+  bateria,
+  ram,
+}) {
   return (
     <>
       <div className="bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl w-96 m-8">
-        <div className="h-340px ">
-          <img
-            src="https://assets.stickpng.com/images/61d2f85b92b57c0004c64745.png"
-            alt=""
+        <div className="h-340px flex">
+          <Image
+            src={imageURL}
+            alt={name}
+            width="250"
+            height="250"
             className="w-full flex-shrink-0"
           />
         </div>
 
         <h3 className="text-white text-base font-medium tracking-tight text-center mt-2">
-          Iphone 13 pro{" "}
+          {name}
         </h3>
         <p className="text-slate-400 mt-2 text-sm">
           <b>Especificaciones:</b>
         </p>
         <p className="text-slate-400 mt-2 pl-2 text-sm">
-          Pantalla: 6.1", 1170 x 2532 pixels
+          Pantalla: {pulgadas}
           <br />
-          Procesador: Apple A15 Bionic
+          Resolución: {resolucion}
           <br />
-          Almacenamiento: 256GB
+          Procesador:{procesador}
           <br />
-          Expansión: sin microSD
+          Bateria: {bateria}
           <br />
-          Cámara: Cuádruple, 12MP+12MP +12MP+TOF 3D
+          Almacenamiento: {almacenamiento} {ram}
           <br />
-          OS: iOS 15
+          Cámara: {camara}
           <br />
-          Perfil: 7.7 mm
+          OS: {os}
           <br />
-          Peso: 204 g<br />
+          Peso: {peso}
+          <br />
         </p>
       </div>
     </>

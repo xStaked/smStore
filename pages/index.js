@@ -1,8 +1,112 @@
 import Head from "next/head";
-import Image from "next/image";
 import Card from "../components/Card";
 import Select from "../components/Select";
 import styles from "../styles/Home.module.css";
+
+export const xiaomi = [
+  {
+    id: 1,
+    brand: "Xiaomi",
+    model: "Redmi Note 11",
+    image: "https://i.imgur.com/5CVBxFP.png",
+    features: {
+      camera: "48MP",
+      ram: "6GB",
+      rom: "128GB",
+      pulgadas: "6.43",
+      resolucion: "1080 x 2400 px • FHD+",
+      procesador: "	Qualcomm Snapdragon 680",
+      bateria: "5000 mAh",
+      os: "Android 11",
+      peso: "179 g",
+    },
+  },
+  {
+    id: 2,
+    brand: "Xiaomi",
+    model: "Redmi Note 11 Pro",
+    image: "https://i.imgur.com/LaPoLNJ.png",
+    features: {
+      camera: "64MP",
+      ram: "6GB",
+      rom: "128GB",
+      pulgadas: "6.6",
+      resolucion: "1080 x 2460 px • FHD+",
+      procesador: "	MediaTek Dimensity 8100 Max",
+      bateria: "5080 mAh",
+      os: "Android 12",
+      peso: "200 g",
+    },
+  },
+  {
+    id: 3,
+    brand: "Xiaomi",
+    model: "Redmi 10 2022",
+    image: "https://i.imgur.com/rBTSBtE.png",
+    features: {
+      camera: "108MP",
+      ram: "4GB",
+      rom: "128GB",
+      pulgadas: "6.5",
+      resolucion: "	1080 x 2400 px • FHD+",
+      procesador: "Helio G88",
+      bateria: "5000 mAh",
+      os: "Android 11",
+      peso: "181 g",
+    },
+  },
+  {
+    id: 4,
+    brand: "Xiaomi",
+    model: "11 Lite NE US",
+    image: "https://i.imgur.com/HDfFQjn.png",
+    features: {
+      camera: "108MP",
+      ram: "6GB",
+      rom: "128GB",
+      pulgadas: "6.55",
+      resolucion: "	1080 x 2400 px • FHD+",
+      procesador: "Snapdragon 778",
+      bateria: "4250 mAh",
+      os: "Android 11",
+      peso: "158 g",
+    },
+  },
+  {
+    id: 5,
+    brand: "Xiaomi",
+    model: "REDMI 9A",
+    image: "https://i.imgur.com/zbtyvOF.png",
+    features: {
+      camera: "108MP",
+      ram: "6GB",
+      rom: "128GB",
+      pulgadas: "6.53",
+      resolucion: "720 x 1600 px • HD+",
+      procesador: "Helio G25",
+      bateria: "5000 mAh",
+      os: "Android 11",
+      peso: "194 g",
+    },
+  },
+  {
+    id: 6,
+    brand: "Xiaomi",
+    model: "REDMI 10C",
+    image: "https://i.imgur.com/zbtyvOF.png",
+    features: {
+      camera: "50MP",
+      ram: "4GB",
+      rom: "128GB",
+      pulgadas: "6.71",
+      resolucion: "	720 x 1650 px • HD+",
+      procesador: "Snapdragon 680",
+      bateria: "5000 mAh",
+      os: "Android 11",
+      peso: "190 g",
+    },
+  },
+];
 
 export default function Home() {
   return (
@@ -18,14 +122,23 @@ export default function Home() {
 
         <p className={styles.description}>Selecciona tu marca Favorita</p>
         <Select />
-
         <div className={styles.grid}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {xiaomi.map((item, ind) => (
+            <Card
+              imageURL={item.image}
+              name={item.model}
+              pulgadas={item.features.pulgadas}
+              procesador={item.features.procesador}
+              almacenamiento={item.features.rom}
+              ram={item.features.ram}
+              camara={item.features.camera}
+              os={item.features.os}
+              peso={item.features.peso}
+              resolucion={item.features.resolucion}
+              bateria={item.features.bateria}
+              key={ind}
+            />
+          ))}
         </div>
       </main>
 
