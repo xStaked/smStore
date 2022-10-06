@@ -88,7 +88,7 @@ export const appleBrands = [
       id: 6,
       brand: "Apple",
       model: "Iphone 13",
-      image: "https://i.imgur.com/w2MlLtd.png",
+      image: "https://i.imgur.com/nGk66EC.png",
       features: {
         camera: "12MP",
         ram: "4GB",

@@ -54,7 +54,7 @@ export const xiaomiBrands = [
       id: 4,
       brand: "Xiaomi",
       model: "11 Lite NE US",
-      image: "https://i.imgur.com/HDfFQjn.png",
+      image: "https://i.imgur.com/hXpxRUv.png",
       features: {
         camera: "108MP",
         ram: "6GB",
@@ -88,7 +88,7 @@ export const xiaomiBrands = [
       id: 6,
       brand: "Xiaomi",
       model: "REDMI 10C",
-      image: "https://i.imgur.com/zbtyvOF.png",
+      image: "https://i.imgur.com/pWsAtmI.png",
       features: {
         camera: "50MP",
         ram: "4GB",

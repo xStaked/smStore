@@ -16,7 +16,7 @@ export default function Select() {
     >
       <option value="/">Selecciona una marca</option>
       <option value="/">Todas</option>
-      <option value="xiaomi">xiaomi</option>
+      <option value="xiaomi">Xiaomi</option>
       <option value="samsung">Samsung</option>
       <option value="apple">Apple</option>
       <option value="motorola">Motorola</option>
