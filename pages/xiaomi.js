@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "../components/Card";
+import Layout from "../components/Layout/Layout";
 import { xiaomiBrands } from "../data/xiaomi";
 
 export default function xiaomi() {
   return (
-    <div>
-      <div className="flex flex-row flex-wrap" >
+    <Layout>
+      <div className="flex flex-row flex-wrap">
         {xiaomiBrands.map((item, ind) => (
           <Card
             imageURL={item.image}
@@ -23,6 +24,6 @@ export default function xiaomi() {
           />
         ))}
       </div>
-    </div>
+    </Layout>
   );
 }

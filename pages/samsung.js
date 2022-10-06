@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
+import Layout from "../components/Layout/Layout";
 import { samsungBrands } from "../data/samsung";
 
 export default function samsung() {
   return (
-    <div>
+    <Layout>
       <div className="flex flex-row flex-wrap">
         {samsungBrands.map((item, ind) => (
           <Card
@@ -23,6 +24,6 @@ export default function samsung() {
           />
         ))}
       </div>
-    </div>
+    </Layout>
   );
 }
