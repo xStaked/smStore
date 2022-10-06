@@ -1,0 +1,28 @@
+import React from "react";
+import Card from "../components/Card";
+import { xiaomiBrands } from "../data/xiaomi";
+
+export default function xiaomi() {
+  return (
+    <div>
+      <div className="flex flex-row flex-wrap" >
+        {xiaomiBrands.map((item, ind) => (
+          <Card
+            imageURL={item.image}
+            name={item.model}
+            pulgadas={item.features.pulgadas}
+            procesador={item.features.procesador}
+            almacenamiento={item.features.rom}
+            ram={item.features.ram}
+            camara={item.features.camera}
+            os={item.features.os}
+            peso={item.features.peso}
+            resolucion={item.features.resolucion}
+            bateria={item.features.bateria}
+            key={ind}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}

@@ -1,7 +1,7 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useRef } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
-
+import { useRouter } from "next/router";
 const people = [
   {
     id: 1,
@@ -37,6 +37,15 @@ function classNames(...classes) {
 
 export default function Select() {
   const [selected, setSelected] = useState(people[3]);
+  const [ value, setValue ] = useState("");
+  const router = useRouter();
+
+
+
+  const handleURL = (e) => {
+    setValue(e.target.value);
+    router.push(`/${e.target.value}`);
+  }
 
   return (
     <Listbox value={selected} onChange={setSelected}>
@@ -68,8 +77,10 @@ export default function Select() {
               leave="transition ease-in duration-100"
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
+
             >
-              <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+              
+              <Listbox.Options  className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                 {people.map((person) => (
                   <Listbox.Option
                     key={person.id}
@@ -80,10 +91,12 @@ export default function Select() {
                       )
                     }
                     value={person}
+                    onClick={handleURL}
                   >
                     {({ selected, active }) => (
                       <>
-                        <div className="flex items-center">
+                        <div className="flex items-center"
+                        >
                           <img
                             src={person.avatar}
                             alt=""
@@ -94,6 +107,7 @@ export default function Select() {
                               selected ? "font-semibold" : "font-normal",
                               "ml-3 block truncate"
                             )}
+              
                           >
                             {person.name}
                           </span>
