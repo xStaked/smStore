@@ -2,7 +2,7 @@ import Head from "next/head";
 import Card from "../components/Card";
 import Select from "../components/Select";
 import styles from "../styles/Home.module.css";
-import { Data } from "../data/data";
+import { Data } from "../data/Data";
 
 export default function Home() {
   return (
