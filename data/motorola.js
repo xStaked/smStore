@@ -40,7 +40,7 @@ export const motorlaBrands = [
       brand: "Motorola",
       model: "G22",
       price: "689.900",
-      image: "https://i.imgur.com/OLmNTbC.png",
+      image: "https://i.imgur.com/cjTgGtG.png",
       features: {
         camera: "50MP",
         ram: "4GB",
@@ -76,7 +76,7 @@ export const motorlaBrands = [
       brand: "Motorola",
       model: "G31",
       price: "699.900",
-      image: "https://i.imgur.com/sW4z5eN.png",
+      image: "https://i.imgur.com/6cKfLKa.png",
       features: {
         camera: "50MP",
         ram: "4GB",
