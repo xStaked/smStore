@@ -2,7 +2,7 @@ export const xiaomiBrands = [
     {
       id: 1,
       brand: "Xiaomi",
-      model: "Redmi Note 11",
+      model: "Xiaomi Redmi Note 11",
       image: "https://i.imgur.com/5CVBxFP.png",
       features: {
         camera: "48MP",

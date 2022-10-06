@@ -17,7 +17,7 @@ function Card({
   return (
     <>
       <div className="bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl w-96 m-8">
-        <div className="h-340px flex">
+        <div className="h-340px flex justify-center	">
           <Image
             src={imageURL}
             alt={name}

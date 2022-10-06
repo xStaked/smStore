@@ -2,7 +2,7 @@ export const Data = [
   {
     id: 1,
     brand: "Xiaomi",
-    model: "Redmi Note 11",
+    model: "Xiaomi Redmi Note 11",
     price: "835.900",
     image: "https://i.imgur.com/5CVBxFP.png",
     features: {
@@ -14,7 +14,7 @@ export const Data = [
   {
     id: 2,
     brand: "Xiaomi",
-    model: "Redmi Note 11 Pro",
+    model: "Xiaomi Redmi Note 11 Pro",
     price: "1.899.000",
     image: "https://i.imgur.com/LaPoLNJ.png",
     features: {
@@ -26,7 +26,7 @@ export const Data = [
   {
     id: 3,
     brand: "Xiaomi",
-    model: "Redmi 10 2022",
+    model: "Xiaomi Redmi 10 2022",
     price: "729.900",
     image: "https://i.imgur.com/rBTSBtE.png",
     features: {
@@ -38,7 +38,7 @@ export const Data = [
   {
     id: 4,
     brand: "Xiaomi",
-    model: "11 Lite NE US",
+    model: "Xiaomi 11 Lite NE US",
     price: "1.599.000",
     image: "https://i.imgur.com/HDfFQjn.png",
     features: {
@@ -50,7 +50,7 @@ export const Data = [
   {
     id: 5,
     brand: "Xiaomi",
-    model: "REDMI 9A",
+    model: "Xiaomi REDMI 9A",
     price: "429.900",
     image: "https://i.imgur.com/zbtyvOF.png",
     features: {
@@ -62,7 +62,7 @@ export const Data = [
   {
     id: 6,
     brand: "Xiaomi",
-    model: "REDMI 9A",
+    model: "Xiaomi REDMI 9A",
     price: "429.900",
     image: "https://i.imgur.com/zbtyvOF.png",
     features: {
@@ -109,7 +109,7 @@ export const Data = [
   {
     id: 9,
     brand: "Samsung",
-    model: "S20FE",
+    model: "Samsung S20FE",
     image: "https://i.imgur.com/P09DxOe.png",
     features: {
       camera: "32MP",
