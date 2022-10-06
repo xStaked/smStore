@@ -17,11 +17,11 @@ export default function Layout({ children }) {
 
         <p className={styles.description}>Selecciona tu marca Favorita</p>
         <Select />
-        {children}
+        <div className={styles.grid}>{children}</div>
       </main>
 
       <footer className={styles.footer}>
-        <p>Hecho por: Jamid, Diego, jaider  </p>
+        <p>Hecho por: Jamid, Diego, jaider </p>
       </footer>
     </div>
   );

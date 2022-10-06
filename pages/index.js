@@ -39,7 +39,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Hecho por: </p>
+        <p>Hecho por: Jamid, Diego, Jaider </p>
       </footer>
     </div>
   );
