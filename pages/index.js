@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Mobile Store </h1>
+        <h1 className={styles.title}>Empresa JJD</h1>
 
         <p className={styles.description}>Selecciona tu marca Favorita</p>
         <Select />
@@ -39,7 +39,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Hecho por: </p>
+        <p>Hecho por: <b>Jamid Diego Jaider</b></p>
       </footer>
     </div>
   );
