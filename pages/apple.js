@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "../components/Card";
+import Layout from "../components/Layout";
 import { appleBrands } from "../data/apple";
 
 export default function brands() {
   return (
-    <div>
-      <div className="flex flex-row flex-wrap">
-        {appleBrands.map((item, ind) => (
+    <Layout>
+       {appleBrands.map((item, ind) => (
           <Card
             imageURL={item.image}
             name={item.model}
@@ -22,7 +22,6 @@ export default function brands() {
             key={ind}
           />
         ))}
-      </div>
-    </div>
+    </Layout>
   );
 }

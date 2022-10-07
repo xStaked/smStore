@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "../components/Card";
+import Layout from "../components/Layout";
 import { huaweiBrands } from "../data/huawei";
 export default function motorola() {
   return (
-    <div>
-      <div className="flex flex-row flex-wrap">
+    <Layout>
         {huaweiBrands.map((item, ind) => (
           <Card
             imageURL={item.image}
@@ -21,7 +21,6 @@ export default function motorola() {
             key={ind}
           />
         ))}
-      </div>
-    </div>
+    </Layout>
   );
 }

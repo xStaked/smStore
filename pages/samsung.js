@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "../components/Card";
+import Layout from "../components/Layout";
 import { samsungBrands } from "../data/samsung";
 
 export default function samsung() {
   return (
-    <div>
-      <div className="flex flex-row flex-wrap">
-        {samsungBrands.map((item, ind) => (
+    <Layout>
+      {samsungBrands.map((item, ind) => (
           <Card
             imageURL={item.image}
             name={item.model}
@@ -22,7 +22,6 @@ export default function samsung() {
             key={ind}
           />
         ))}
-      </div>
-    </div>
+    </Layout>
   );
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
+import Layout from "../components/Layout";
 import { motorlaBrands } from "../data/motorola";
 export default function motorola() {
   return (
-    <div>
-      <div className="flex flex-row flex-wrap">
-        {motorlaBrands.map((item, ind) => (
+    <Layout>
+      {motorlaBrands.map((item, ind) => (
           <Card
             imageURL={item.image}
             name={item.model}
@@ -21,7 +21,6 @@ export default function motorola() {
             key={ind}
           />
         ))}
-      </div>
-    </div>
+    </Layout>
   );
 }
